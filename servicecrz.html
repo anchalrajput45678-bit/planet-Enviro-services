@@ -1,0 +1,1854 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVZ3lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Planet Enviro Services - Premium Navbar</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Planet Enviro Services</title>
+   
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #28a745;
+            --primary-dark: #1e7e34;
+            --secondary: #0d6efd;
+            --dark: #2c3e50;
+            --light: #f8fffe;
+            --gray: #6c757d;
+            --white: #ffffff;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: var(--dark);
+        }
+
+        /* Top Info Bar */
+        .top-bar {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--secondary) 100%);
+            color: var(--white);
+            padding: 10px 20px;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .top-info {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            flex-wrap: wrap;
+        }
+
+        .top-info a {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 12px;
+        }
+
+        .top-info a:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background: var(--white);
+            border-radius: 6px;
+            transition: var(--transition);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icons a:hover {
+            transform: translateY(-3px) scale(1.1);
+        }
+
+        .social-icons a.facebook:hover {
+            box-shadow: 0 5px 15px rgba(24, 119, 242, 0.4);
+        }
+
+        .social-icons a.instagram:hover {
+            box-shadow: 0 5px 15px rgba(225, 48, 108, 0.4);
+            transform: translateY(-3px) scale(1.1) rotate(5deg);
+        }
+
+        .social-icons a.linkedin:hover {
+            box-shadow: 0 5px 15px rgba(0, 119, 181, 0.4);
+        }
+
+        .social-icons a.twitter:hover {
+            box-shadow: 0 5px 15px rgba(29, 161, 242, 0.4);
+        }
+
+        /* Main Navbar */
+        nav {
+            background: linear-gradient(to bottom, var(--white) 0%, var(--light) 100%);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid rgba(40, 167, 69, 0.15);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(40, 167, 69, 0.25);
+            transition: var(--transition);
+        }
+
+        .logo-icon:hover {
+            transform: rotate(5deg) scale(1.05);
+        }
+
+        .logo-icon-inner {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon-inner span {
+            font-size: 26px;
+            color: var(--white);
+            font-weight: bold;
+        }
+
+        .logo-text {
+            font-size: 20px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .logo-subtext {
+            font-size: 9px;
+            color: var(--gray);
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        /* Desktop Menu */
+        .desktop-menu {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: var(--transition);
+            position: relative;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .nav-link:hover .underline {
+            width: 100%;
+        }
+
+        .underline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.3s;
+            border-radius: 3px;
+        }
+
+        /* Dropdowns */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--white);
+            min-width: 200px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            padding: 10px 0;
+            z-index: 1000;
+            border-top: 3px solid var(--primary);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px 20px;
+            color: var(--dark);
+            text-decoration: none;
+            font-size: 13px;
+            transition: var(--transition);
+        }
+
+        .dropdown-content a:hover {
+            background: linear-gradient(90deg, rgba(40,167,69,0.1), rgba(13,110,253,0.1));
+            color: var(--primary);
+            padding-left: 25px;
+        }
+
+        /* Call Button */
+        .call-btn {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+            transition: var(--transition);
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .call-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 25px rgba(40, 167, 69, 0.6);
+        }
+
+        .call-btn:hover i {
+            animation: ring 0.5s ease-in-out infinite;
+        }
+
+        @keyframes ring {
+            0%, 100% { transform: rotate(0deg); }
+            10%, 30%, 50%, 70%, 90% { transform: rotate(-15deg); }
+            20%, 40%, 60%, 80% { transform: rotate(15deg); }
+        }
+
+        /* Mobile Menu Button */
+        .menu-btn {
+            display: none;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border: none;
+            width: 42px;
+            height: 42px;
+            border-radius: 8px;
+            cursor: pointer;
+            color: var(--white);
+            font-size: 20px;
+            box-shadow: 0 3px 10px rgba(40, 167, 69, 0.3);
+            transition: var(--transition);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 320px;
+            height: 100vh;
+            background: var(--white);
+            box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+            z-index: 1001;
+            transition: right 0.4s ease-in-out;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--secondary) 100%);
+            color: var(--white);
+        }
+
+        .mobile-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .mobile-logo-text {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 24px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .close-btn:hover {
+            transform: rotate(90deg);
+        }
+
+        .mobile-nav {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .mobile-nav-item {
+            margin-bottom: 10px;
+        }
+
+        .mobile-nav-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--dark);
+            padding: 12px 15px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: var(--transition);
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .mobile-nav-link:hover {
+            background: linear-gradient(90deg, rgba(40, 167, 69, 0.1), rgba(13, 110, 253, 0.1));
+            color: var(--primary);
+        }
+
+        .mobile-nav-link i {
+            transition: transform 0.3s;
+        }
+
+        .mobile-nav-link.active i {
+            transform: rotate(180deg);
+        }
+
+        .mobile-dropdown {
+            display: none;
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        .mobile-dropdown.active {
+            display: block;
+        }
+
+        .mobile-dropdown a {
+            display: block;
+            color: var(--gray);
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            transition: var(--transition);
+            border-radius: 6px;
+        }
+
+        .mobile-dropdown a:hover {
+            color: var(--primary);
+            background: rgba(40, 167, 69, 0.05);
+        }
+
+        .mobile-call-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 20px;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+            transition: var(--transition);
+            font-size: 16px;
+        }
+
+        .mobile-call-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(40, 167, 69, 0.5);
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .desktop-menu {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .desktop-menu {
+                display: none;
+            }
+            
+            .menu-btn {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                padding: 8px 15px;
+            }
+            
+            .social-icons {
+                display: none;
+            }
+            
+            .nav-container {
+                padding: 10px 15px;
+            }
+            
+            .logo-text {
+                font-size: 18px;
+            }
+            
+            .logo-subtext {
+                font-size: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 8px 12px;
+            }
+            
+            .logo-section {
+                gap: 8px;
+            }
+            
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .logo-text {
+                font-size: 16px;
+            }
+            
+            .mobile-menu {
+                width: 280px;
+            }
+        }
+
+        /* Demo Content */
+        .demo-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .demo-content h1 {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .demo-content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="top-info">
+            <!-- Email -->
+            <a href="mailto:info@planetenviro.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@planetenviro.com</span>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+919876543210">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 98765 43210</span>
+            </a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer" class="facebook">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#1877f2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" class="instagram">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="url(#instagram-gradient)"><defs><linearGradient id="instagram-gradient" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#f09433;stop-opacity:1" /><stop offset="25%" style="stop-color:#e6683c;stop-opacity:1" /><stop offset="50%" style="stop-color:#dc2743;stop-opacity:1" /><stop offset="75%" style="stop-color:#cc2366;stop-opacity:1" /><stop offset="100%" style="stop-color:#bc1888;stop-opacity:1" /></linearGradient></defs><path d="M12 2.163c3.204 0 3.584.012 4.85.07 ..."/></svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener noreferrer" class="linkedin">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#0077b5"><path d="M20.447 20.452h-3.554 ..."/></svg>
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" class="twitter">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23.953 4.57a10 10 ..."/></svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav>
+        <div class="nav-container">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <div class="logo-icon-inner">
+                        <span>P</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="logo-text">Planet Enviro Services</div>
+                    <div class="logo-subtext">ENVIRONMENTAL SOLUTIONS</div>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="desktop-menu">
+                <!-- Home -->
+                <a href="./index.html" class="nav-link">
+                    Home
+                    <span class="underline"></span>
+                </a>
+
+                <!-- About Us with Dropdown -->
+                <div class="dropdown">
+                    <a href="./about.html" class="nav-link">
+                        About Us <i class="fa-solid fa-chevron-down"></i>
+                        <span class="underline"></span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="./aboutIntroduction.html">Introduction</a>
+                        <a href="./aboutDirector.html">Director's Profile</a>
+                        <a href="./aboutMission.html">Mission Vision</a>
+                        <a href="./aboutTestimonials.html">Testimonials</a>
+                        <a href="./aboutwhyus.html">Why Us</a>
+                        <a href="./aboutfaq.html">FAQ'S</a>
+                    </div>
+                </div>
+
+                <!-- Services with Dropdown -->
+                <div class="dropdown">
+                    <a href="./serviceeceia.html" class="nav-link">
+                        Our Expertise <i class="fa-solid fa-chevron-down"></i>
+                        <span class="underline"></span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="./serviceeceia.html">Environmental Clearance (EC) & Environmental
+Impact Assessment Study (EIA)</a>
+                        <a href="./servicesustainability.html"> Sustainability Consulting</a>
+                        <a href="./servicediligence.html">Environmental Due Diligence </a>
+                        <a href="./servicecrz.html">CRZ Clearance:</a>
+                        <a href="./servicecompliance.html">Environmental Compliance:</a>
+                        <a href="./servicemonitoring.html"> Environmental Monitoring and Testing</a>
+                        <a href="./servicepostec.html">Six Monthly Post EC Compliance:</a>
+                        <a href="./servicewatertreatment.html">Water and Wastewater Treatment Solutions</a>
+                    </div>
+                </div>
+
+                <!-- Projects with Dropdown -->
+                <div class="dropdown">
+                    <a href="#" class="nav-link">
+                        Projects <i class="fa-solid fa-chevron-down"></i>
+                        <span class="underline"></span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Completed Projects</a>
+                        <a href="#">Ongoing Projects</a>
+                        <a href="#">Industrial Projects</a>
+                        <a href="#">Commercial Projects</a>
+                        <a href="#">Government Projects</a>
+                        <a href="#">Case Studies</a>
+                        <a href="#">Project Gallery</a>
+                        <a href="#">Success Stories</a>
+                    </div>
+                </div>
+
+                <!-- Laboratory with Dropdown -->
+                <div class="dropdown">
+                    <a href="#" class="nav-link">
+                        Laboratory <i class="fa-solid fa-chevron-down"></i>
+                        <span class="underline"></span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Water Testing</a>
+                        <a href="#">Air Quality Testing</a>
+                        <a href="#">Soil Testing</a>
+                        <a href="#">Environmental Monitoring</a>
+                        <a href="#">Chemical Analysis</a>
+                        <a href="#">NABL Accreditation</a>
+                        <a href="#">Lab Equipment</a>
+                        <a href="#">Testing Procedures</a>
+                    </div>
+                </div>
+
+                <!-- Contact with Dropdown -->
+                <!-- <div class="dropdown">
+                    <a href="#" class="nav-link">
+                        Contact Us<i class="fa-solid fa-chevron-down"></i>
+                        <span class="underline"></span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact Us</a>
+                        <a href="#">Get Quote</a>
+                        <a href="#">Office Locations</a>
+                        <a href="#">Enquiry Form</a>
+                        <a href="#">Support</a>
+                        <a href="#">Career</a>
+                        <a href="#">Feedback</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div> -->
+
+
+
+                <div class="dropdown">
+                    <a href="./contactus.html" class="nav-link">
+                        Contact Us </i>
+                        <span class="underline"></span>
+                    </a>
+                     
+                </div>
+
+                <!-- Call Button -->
+                <a href="tel:+919876543210" class="call-btn">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call Now</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-header">
+            <div class="mobile-logo">
+                <div class="logo-text">Planet Enviro</div>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-nav">
+            <!-- Home -->
+            <a href="./index.html" class="mobile-nav-link">
+                <span><i class="fa-solid fa-home"></i> Home</span>
+            </a>
+
+            <!-- About Us Mobile Dropdown -->
+            <div class="mobile-nav-item">
+                <div class="mobile-nav-link" data-target="mobileAboutDropdown">
+                    <span><i class="fa-solid fa-info-circle"></i> About Us</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="mobile-dropdown" id="mobileAboutDropdown">
+                    <a href="./aboutIntroduction.html">Introduction</a>
+                    <a href="./aboutDirector.html">Director's Profile</a>
+                    <a href="./aboutMission.html">Mission Vision</a>
+                    <a href="./aboutTestimonials.html">Testimonials</a>
+                    <a href="./aboutwhyus.html">Why Us</a>
+                    <a href="./aboutfaq.html">FAQ'S</a>
+                </div>
+            </div>
+
+            <!-- Services Mobile Dropdown -->
+            <div class="mobile-nav-item">
+    <div class="mobile-nav-link" data-target="mobileServicesDropdown">
+        <span><i class="fa-solid fa-cogs"></i>Our Expertise</span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="mobile-dropdown" id="mobileServicesDropdown">
+        <a href="./serviceeceia.html">Environmental Clearance (EC) & Environmental Impact Assessment Study (EIA)</a>
+        <a href="./servicesustainability.html">Sustainability Consulting</a>
+        <a href="./servicediligence.html">Environmental Due Diligence</a>
+        <a href="./servicecrz.html">CRZ Clearance</a>
+        <a href="./servicecompliance.html">Environmental Compliance</a>
+        <a href="./servicemonitoring.html">Environmental Monitoring and Testing</a>
+        <a href="./servicepostec.html">Six Monthly Post EC Compliance</a>
+        <a href="./servicewatertreatment.html">Water and Wastewater Treatment Solutions</a>
+    </div>
+</div>
+
+            <!-- Projects Mobile Dropdown -->
+            <div class="mobile-nav-item">
+                <div class="mobile-nav-link" data-target="mobileProjectsDropdown">
+                    <span><i class="fa-solid fa-project-diagram"></i> Projects</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="mobile-dropdown" id="mobileProjectsDropdown">
+                    <a href="#">Completed Projects</a>
+                    <a href="#">Ongoing Projects</a>
+                    <a href="#">Industrial Projects</a>
+                    <a href="#">Commercial Projects</a>
+                    <a href="#">Government Projects</a>
+                    <a href="#">Case Studies</a>
+                    <a href="#">Project Gallery</a>
+                    <a href="#">Success Stories</a>
+                </div>
+            </div>
+
+            <!-- Laboratory Mobile Dropdown -->
+            <div class="mobile-nav-item">
+                <div class="mobile-nav-link" data-target="mobileLabDropdown">
+                    <span><i class="fa-solid fa-flask"></i> Laboratory</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="mobile-dropdown" id="mobileLabDropdown">
+                    <a href="#">Water Testing</a>
+                    <a href="#">Air Quality Testing</a>
+                    <a href="#">Soil Testing</a>
+                    <a href="#">Environmental Monitoring</a>
+                    <a href="#">Chemical Analysis</a>
+                    <a href="#">NABL Accreditation</a>
+                    <a href="#">Lab Equipment</a>
+                    <a href="#">Testing Procedures</a>
+                </div>
+            </div>
+
+            <!-- Contact Mobile Dropdown -->
+            <div class="mobile-nav-item">
+                <div class="mobile-nav-link" data-target="mobileContactDropdown">
+                    <span><i class="fa-solid fa-envelope"></i> Contact</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="mobile-dropdown" id="mobileContactDropdown">
+                    <a href="#">Contact Us</a>
+                    <a href="#">Get Quote</a>
+                    <a href="#">Office Locations</a>
+                    <a href="#">Enquiry Form</a>
+                    <a href="#">Support</a>
+                    <a href="#">Career</a>
+                    <a href="#">Feedback</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Call Button -->
+        <a href="tel:+919876543210" class="mobile-call-btn">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call Now</span>
+        </a>
+    </div>
+
+  
+
+    <script>
+        // Mobile Menu Functionality
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('overlay');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link[data-target]');
+
+        // Toggle mobile menu
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        }
+
+        // Toggle mobile dropdown
+        function toggleMobileDropdown(targetId) {
+            const dropdown = document.getElementById(targetId);
+            const link = document.querySelector(`.mobile-nav-link[data-target="${targetId}"]`);
+            
+            // Close all other dropdowns
+            document.querySelectorAll('.mobile-dropdown').forEach(drop => {
+                if (drop.id !== targetId) {
+                    drop.classList.remove('active');
+                    const otherLink = document.querySelector(`.mobile-nav-link[data-target="${drop.id}"]`);
+                    if (otherLink) {
+                        otherLink.classList.remove('active');
+                    }
+                }
+            });
+            
+            // Toggle current dropdown
+            dropdown.classList.toggle('active');
+            link.classList.toggle('active');
+        }
+
+        // Event Listeners
+        menuBtn.addEventListener('click', toggleMobileMenu);
+        closeBtn.addEventListener('click', toggleMobileMenu);
+        overlay.addEventListener('click', toggleMobileMenu);
+
+        // Mobile dropdown toggles
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                toggleMobileDropdown(targetId);
+            });
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-dropdown a').forEach(link => {
+            link.addEventListener('click', toggleMobileMenu);
+        });
+
+        // Close dropdowns when clicking outside on desktop
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 1024) {
+                mobileMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+                
+                // Close all mobile dropdowns
+                document.querySelectorAll('.mobile-dropdown').forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+                document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+            }
+        });
+    </script>
+>
+ <!-- hero section -->
+    <section class="page-header" style="
+    width: 100%;
+    height: 250px;
+    background: url('https://static.vecteezy.com/system/resources/previews/024/472/833/large_2x/green-earth-day-on-isolated-white-background-care-for-the-environment-and-ecology-resources-that-are-sustainable-renewable-and-green-graphic-resource-generative-ai-free-photo.jpg ') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+">
+    <h1 style="font-size: 2.5rem; margin: 0;"> CRZ Clearance </h1>
+    <p style="font-size: 1.2rem; margin: 5px 0 0 0;">Home > CRZ Clearance</p>
+</section>
+
+<style>
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .page-header {
+            height: 180px; /* smaller height on mobile */
+            padding: 0 10px; /* some horizontal padding */
+        }
+        .page-header h1 {
+            font-size: 1.8rem; /* smaller heading */
+        }
+        .page-header p {
+            font-size: 1rem; /* smaller subtitle */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .page-header {
+            height: 150px; 
+        }
+        .page-header h1 {
+            font-size: 1.5rem; 
+        }
+        .page-header p {
+            font-size: 0.9rem; 
+        }
+    }
+</style>
+    <!-- Navbar -->
+    
+     <!-- CRZ Clearance Hero Section -->
+ <header id="crz-hero" style="position:relative;width:100%;background:#D8F3DC;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:20px 0;box-sizing:border-box;">
+
+  <!-- Background Floating Bubbles -->
+  <div style="position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none;overflow:hidden;">
+      <div style="position:absolute;width:50px;height:50px;background:rgba(34,85,54,0.2);border-radius:50%;animation:bubble1 12s infinite;left:15%;top:90%;"></div>
+      <div style="position:absolute;width:35px;height:35px;background:rgba(34,85,54,0.15);border-radius:50%;animation:bubble2 14s infinite;left:50%;top:95%;"></div>
+      <div style="position:absolute;width:60px;height:60px;background:rgba(34,85,54,0.25);border-radius:50%;animation:bubble3 16s infinite;left:80%;top:85%;"></div>
+      <div style="position:absolute;width:40px;height:40px;background:rgba(34,85,54,0.18);border-radius:50%;animation:bubble4 18s infinite;left:35%;top:92%;"></div>
+  </div>
+
+  <!-- Hero Content Container -->
+  <div style="position:relative;max-width:1100px;background:rgba(255,255,255,0.95);padding:30px 20px;border-radius:20px;box-shadow:0 12px 35px rgba(0,0,0,0.15);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;animation:fadeInUp 1.5s;">
+
+    <!-- Left: Text & Points -->
+    <div style="flex:1 1 500px;padding:10px;min-width:280px;box-sizing:border-box;">
+      <h1 style="color:#116639;font-size:2rem;margin-bottom:15px;text-align:left;">CRZ Clearance Assistance 🌊</h1>
+      <p style="font-size:1rem;color:#333;line-height:1.5;margin-bottom:20px;">
+        We assist clients for CRZ Guidelines published by MOEFCC. Conducting site visits, assessment studies, and documentation for Town Planning, Urban Development, and Environmental authorities.
+      </p>
+      
+      <!-- Service Points -->
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <img src="https://img.icons8.com/fluency/48/000000/map-marker.png" style="width:28px;height:28px;" alt="Site Visits">
+          <span style="font-weight:600;color:#116639;">Site Visits & Surveys</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <img src="https://img.icons8.com/fluency/48/000000/clipboard.png" style="width:28px;height:28px;" alt="Assessment">
+          <span style="font-weight:600;color:#116639;">Assessment Studies</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <img src="https://img.icons8.com/fluency/48/000000/document.png" style="width:28px;height:28px;" alt="Documentation">
+          <span style="font-weight:600;color:#116639;">Documentation for Authorities</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <img src="https://img.icons8.com/fluency/96/000000/approval.png" style="width:28px;height:28px;" alt="Compliance">
+          <span style="font-weight:600;color:#116639;">Compliance & Regulatory Support</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Image -->
+    <div style="flex:1 1 500px;padding:10px;min-width:280px;text-align:center;box-sizing:border-box;">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2024/7/431449664/VD/GB/BX/65810003/environmental-crz-clearance-service.jpg" 
+           style="width:100%;max-width:350px;height:auto;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,0.2);animation:imgFloat 4s ease-in-out infinite alternate;" 
+           alt="CRZ Site">
+    </div>
+
+  </div>
+
+  <style>
+    @keyframes bubble1 {0%{transform:translateY(0) scale(1);opacity:1;}100%{transform:translateY(-100vh) scale(0.5);opacity:0;}}
+    @keyframes bubble2 {0%{transform:translateY(0) scale(1);opacity:1;}100%{transform:translateY(-100vh) scale(0.5);opacity:0;}}
+    @keyframes bubble3 {0%{transform:translateY(0) scale(1);opacity:1;}100%{transform:translateY(-100vh) scale(0.5);opacity:0;}}
+    @keyframes bubble4 {0%{transform:translateY(0) scale(1);opacity:1;}100%{transform:translateY(-100vh) scale(0.5);opacity:0;}}
+    @keyframes fadeInUp {0%{opacity:0;transform:translateY(30px);}100%{opacity:1;transform:translateY(0);}}
+    @keyframes imgFloat {0%{transform:translateY(0px);}100%{transform:translateY(-15px);}}
+
+    /* Mobile Fix */
+    @media (max-width:768px){
+      #crz-hero {padding-top:80px;padding-bottom:40px;}
+      #crz-hero div[style*="flex:1 1 500px"] {flex:1 1 100%; text-align:center; padding:10px !important;}
+      #crz-hero h1 {font-size:1.6rem;}
+      #crz-hero p {font-size:0.95rem;}
+      #crz-hero img {max-width:300px;}
+    }
+  </style>
+</header>
+
+
+
+<!-- anothere hero section -->
+
+<!-- CRZ Clearance Process Section -->
+<section style="position:relative;width:100%;background:#E6F7EE;padding:50px 20px;box-sizing:border-box;overflow:hidden;">
+  
+  <!-- Animated Background Waves -->
+  <div style="position:absolute;width:200%;height:200px;top:-50px;left:-50%;background:rgba(34,85,54,0.1);border-radius:50%;animation:wave 8s ease-in-out infinite alternate;"></div>
+  <div style="position:absolute;width:250%;height:250px;top:100px;left:-70%;background:rgba(34,85,54,0.05);border-radius:50%;animation:wave2 12s ease-in-out infinite alternate;"></div>
+
+  <!-- Section Header -->
+  <h2 style="text-align:center;color:#116639;font-size:2.2rem;margin-bottom:40px;">Our CRZ Clearance Process 🌊</h2>
+
+  <!-- Steps Container -->
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:30px;max-width:1100px;margin:auto;">
+    
+    <!-- Step 1 -->
+    <div style="flex:1 1 250px;background:white;padding:25px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.1);text-align:center;animation:fadeUp 1s forwards;">
+      <img src="https://img.icons8.com/fluency/96/000000/map-marker.png" style="width:70px;height:70px;margin-bottom:15px;" alt="Site Visit">
+      <h3 style="color:#116639;font-size:1.2rem;margin-bottom:10px;">Site Visit</h3>
+      <p style="color:#333;font-size:0.95rem;line-height:1.5;">We visit the site to check all environmental parameters and CRZ guidelines.</p>
+    </div>
+
+    <!-- Step 2 -->
+    <div style="flex:1 1 250px;background:white;padding:25px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.1);text-align:center;animation:fadeUp 1.3s forwards;">
+      <img src="https://img.icons8.com/fluency/96/000000/clipboard.png" style="width:70px;height:70px;margin-bottom:15px;" alt="Assessment">
+      <h3 style="color:#116639;font-size:1.2rem;margin-bottom:10px;">Assessment Study</h3>
+      <p style="color:#333;font-size:0.95rem;line-height:1.5;">Detailed study of CRZ regulations and site conditions to identify requirements.</p>
+    </div>
+
+    <!-- Step 3 -->
+    <div style="flex:1 1 250px;background:white;padding:25px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.1);text-align:center;animation:fadeUp 1.6s forwards;">
+      <img src="https://img.icons8.com/fluency/96/000000/document.png" style="width:70px;height:70px;margin-bottom:15px;" alt="Documentation">
+      <h3 style="color:#116639;font-size:1.2rem;margin-bottom:10px;">Documentation</h3>
+      <p style="color:#333;font-size:0.95rem;line-height:1.5;">Preparing reports and submitting to Town Planning and Environmental authorities.</p>
+    </div>
+
+    <!-- Step 4 -->
+    <div style="flex:1 1 250px;background:white;padding:25px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.1);text-align:center;animation:fadeUp 1.9s forwards;">
+      <img src="https://img.icons8.com/fluency/96/000000/approval.png" style="width:70px;height:70px;margin-bottom:15px;" alt="Compliance">
+      <h3 style="color:#116639;font-size:1.2rem;margin-bottom:10px;">Compliance Support</h3>
+      <p style="color:#333;font-size:0.95rem;line-height:1.5;">Ensuring all regulatory guidelines are met and approvals obtained smoothly.</p>
+    </div>
+
+  </div>
+
+  <!-- Animations -->
+  <style>
+    @keyframes wave {0%{transform:translateX(0px) translateY(0) rotate(0deg);}50%{transform:translateX(80px) translateY(20px) rotate(45deg);}100%{transform:translateX(0px) translateY(0) rotate(0deg);}}
+    @keyframes wave2 {0%{transform:translateX(0px) translateY(0) rotate(0deg);}50%{transform:translateX(100px) translateY(-30px) rotate(30deg);}100%{transform:translateX(0px) translateY(0) rotate(0deg);}}
+    @keyframes fadeUp {0%{opacity:0;transform:translateY(40px);}100%{opacity:1;transform:translateY(0);}}
+  </style>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ <!-- end hero section -->
+
+
+
+<!-- footer starts here -->
+   <footer style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920') center/cover; color: white; padding: 50px 20px 20px;">
+    <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 30px;">
+        <!-- Logo & Social Media Section -->
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+            <div style="width: 200px; height: 80px; background: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #333; font-weight: bold; font-size: 14px;">Your Logo Here</div>
+            <p style="font-size: 14px; line-height: 1.6; color: #ddd; margin: 0;">Environmental Health, Safety & Sustainability<br>"Your Satisfaction Is Our Satisfaction"</p>
+            
+            <div style="display: flex; gap: 12px; margin-top: 10px;">
+                <a href="https://www.facebook.com/YourPage" title="Facebook" target="_blank" style="width: 44px; height: 44px; border-radius: 8px; display: flex; align-items: center; justify-content: center; text-decoration: none; color: white; font-size: 22px; transition: transform 0.3s, opacity 0.3s; background: #1877f2;">f</a>
+                <a href="https://www.instagram.com/YourProfile" title="Instagram" target="_blank" style="width: 44px; height: 44px; border-radius: 8px; display: flex; align-items: center; justify-content: center; text-decoration: none; color: white; font-size: 22px; transition: transform 0.3s, opacity 0.3s; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);">📷</a>
+                <a href="https://www.linkedin.com/in/YourProfile" title="LinkedIn" target="_blank" style="width: 44px; height: 44px; border-radius: 8px; display: flex; align-items: center; justify-content: center; text-decoration: none; color: white; font-size: 22px; transition: transform 0.3s, opacity 0.3s; background: #0077b5;">in</a>
+                <a href="https://twitter.com/YourProfile" title="Twitter" target="_blank" style="width: 44px; height: 44px; border-radius: 8px; display: flex; align-items: center; justify-content: center; text-decoration: none; color: white; font-size: 22px; transition: transform 0.3s, opacity 0.3s; background: #000;">𝕏</a>
+                <a href="https://www.youtube.com/@YourChannel" title="YouTube" target="_blank" style="width: 44px; height: 44px; border-radius: 8px; display: flex; align-items: center; justify-content: center; text-decoration: none; color: white; font-size: 22px; transition: transform 0.3s, opacity 0.3s; background: #ff0000;">▶</a>
+            </div>
+            
+            <div style="background: rgba(40, 167, 69, 0.1); padding: 15px; border-radius: 8px; border-left: 4px solid #28a745; margin-top: 20px;">
+                <h4 style="font-size: 16px; margin: 0 0 10px 0; color: #28a745;">📝 Leave a Review!</h4>
+                <p style="font-size: 13px; color: #ddd; margin: 0;">Planet Enviro Services</p>
+            </div>
+        </div>
+
+        <!-- Head Office Section -->
+        <div>
+          <!-- start 1 -->
+            <h3 style="font-size: 18px; margin: 0 0 15px 0; padding-bottom: 10px; border-bottom: 2px solid #28a745; display: inline-block;">📍 Our Offices</h3>
+            <p style="font-size: 17px; line-height: 1.8; color: blue; margin: 8px 0;"><strong> Corporate Office</strong></p>
+            <p style="font-size: 14px; line-height: 1.8; color: #ddd; margin: 8px 0;"> O 201, Greens Center, Opp Pudumjee Paper Mill,
+<br>Aditya Birla Hospital Road, 
+<br>PCMC, Thergaon,
+Pune 411033, 
+<br>Maharashtra, India
+ 
+            
+            <div style="display: flex; align-items: flex-start; gap: 10px; margin: 12px 0;">
+                <span style="min-width: 22px; font-size: 20px;">📞</span>
+                <div>
+                    <p style="font-size: 14px; line-height: 1.8; color: #ddd; margin: 0;"><strong>Office No</strong></p>
+                    <a href="tel:02029516845" style="font-size: 14px; line-height: 1.8; color: #ddd; text-decoration: none; display: block;">+91 9860732366</a>
+                </div>
+            </div> 
+            <!-- 1 end  -->
+
+            <!-- 2.
+              -->
+            <div>
+             
+          <div>
+            <p style="font-size: 17px; line-height: 1.8; color: blue; margin: 8px 0;"><strong> Kalyan
+ </strong></p>
+            <p style="font-size: 14px; line-height: 1.8; color: #ddd; margin: 8px 0;"> 
+   201, Sahara Buidcon,<br> Gautam Society, Opp ICICI<br>
+Bank, Khadak Pada,<br> Kalyan (W) 421301
+
+            
+            <div style="display: flex; align-items: flex-start; gap: 10px; margin: 12px 0;">
+                <span style="min-width: 22px; font-size: 20px;">📞</span>
+                <div>
+                    <p style="font-size: 14px; line-height: 1.8; color: #ddd; margin: 0;"><strong>Office No</strong></p>
+                    <a href="tel:02029516845" style="font-size: 14px; line-height: 1.8; color: #ddd; text-decoration: none; display: block;">+91 9860352441</a>
+                </div>
+
+            </div>
+        </div>  <br>
+            
+            <!--  end 2 -->
+
+             <div>
+             <!-- 1. -->
+          <p style="font-size: 17px; line-height: 1.8; color: blue; margin: 8px 0;"><strong>Nagpur</strong></p>
+            <p style="font-size: 14px; line-height: 1.8; color: #ddd; margin: 8px 0;"> 
+ Plot No. 237, Hanuman <br>Nagar Near Mahatma
+Gandhi Udyan, <br>Nagpur - 440024
+ 
+            
+            <div style="display: flex; align-items: flex-start; gap: 10px; margin: 12px 0;">
+                <span style="min-width: 22px; font-size: 20px;">📞</span>
+                <div>
+                    <p style="font-size: 14px; line-height: 1.8; color: #ddd; margin: 0;"><strong>Office No</strong></p>
+                    <a href="tel:02029516845" style="font-size: 14px; line-height: 1.8; color: #ddd; text-decoration: none; display: block;">+91 9860725266</a>
+                </div>
+
+            </div> 
+        </div>
+
+        <!-- 4. -->
+<div>
+ <p style="font-size: 17px; line-height: 1.8; color: blue; margin: 8px 0;"><strong>Chh. Sambhaji Nagar
+ </strong></p>
+            <p style="font-size: 14px; line-height: 1.8; color: #ddd; margin: 8px 0;"> 
+  Office No-161, First Floor,<br> GCC, Golden City
+Center, Beside <br>Prozone Mall, Chh. Sambhaji<br>
+Nagar, Maharashtra 431001
+
+            
+            <div style="display: flex; align-items: flex-start; gap: 10px; margin: 12px 0;">
+                <span style="min-width: 22px; font-size: 20px;">📞</span>
+                <div>
+                    <p style="font-size: 14px; line-height: 1.8; color: #ddd; margin: 0;"><strong>Office No</strong></p>
+                    <a href="tel:02029516845" style="font-size: 14px; line-height: 1.8; color: #ddd; text-decoration: none; display: block;">  +91 9527890076</a>
+                </div>
+
+            </div>
+</div>
+        </div> 
+        </div>
+
+        
+        
+        <!-- Location Map Section -->
+        <div>
+            <h3 style="font-size: 18px; margin: 0 0 15px 0; padding-bottom: 10px; border-bottom: 2px solid #28a745; display: inline-block;">🗺️ Location Map</h3>
+            <p style="font-size: 14px; line-height: 1.8; color: #ddd; margin: 0 0 10px 0;"><strong>Planet Enviro Services</strong></p>
+            <div style="width: 100%; height: 320px; border-radius: 8px; overflow: hidden; margin-top: 15px; border: 3px solid #28a745;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.6949825147466!2d73.84167931489795!3d18.53462998741738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07f74d6f6c9%3A0x7c8e09b3c3d3c3d3!2sShivajinagar%2C%20Pune%2C%20Maharashtra%20411003!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    style="width: 100%; height: 100%; border: none;">
+                </iframe>
+            </div>
+            <a href="https://maps.google.com/?q=Shivajinagar+Pune+411003" target="_blank" style="display: inline-block; margin-top: 12px; color: #28a745; text-decoration: none; font-size: 14px;">View larger map →</a>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div style="text-align: center; padding-top: 25px; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 13px; color: #aaa;">
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 15px;">
+            <a href="#home" style="color: white; text-decoration: none; padding: 8px 12px; border: 1px solid white; border-radius: 5px;">Home</a>
+            <a href="#about" style="color: white; text-decoration: none; padding: 8px 12px; border: 1px solid white; border-radius: 5px;">About Us</a>
+            <a href="#blogs" style="color: white; text-decoration: none; padding: 8px 12px; border: 1px solid white; border-radius: 5px;">Blogs</a>
+            <a href="#gallery" style="color: white; text-decoration: none; padding: 8px 12px; border: 1px solid white; border-radius: 5px;">Gallery</a>
+            <a href="#clients" style="color: white; text-decoration: none; padding: 8px 12px; border: 1px solid white; border-radius: 5px;">Clients</a>
+            <a href="#contact" style="color: white; text-decoration: none; padding: 8px 12px; border: 1px solid white; border-radius: 5px;">Contact Us</a>
+            <a href="#enquiry" style="color: white; text-decoration: none; padding: 8px 12px; border: 1px solid white; border-radius: 5px;">Enquiry</a>
+            <a href="#locations" style="color: white; text-decoration: none; padding: 8px 12px; border: 1px solid white; border-radius: 5px;">Locations We Serve</a>
+        </div>
+        <div style="font-size: 13px;">
+            © 2024 Planet Enviro Services® All rights reserved. | Privacy Policy Designed & Hosted by MID
+        </div>
+    </div>
+</footer>
+
+<style>
+/* Global responsive defaults */
+html { -webkit-text-size-adjust: 100%; }
+*, *::before, *::after { box-sizing: border-box; }
+img, video { max-width: 100%; height: auto; }
+iframe { max-width: 100%; }
+
+@keyframes ring {
+    0%, 100% { transform: rotate(0deg); }
+    10%, 30% { transform: rotate(-10deg); }
+    20%, 40% { transform: rotate(10deg); }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide.active {
+    opacity: 1 !important;
+}
+
+.dot.active {
+    background: white !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.5) !important;
+    /* transform: translateY(-50%) scale(1.1) !important; */
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.8) !important;
+    transform: scale(1.2) !important;
+}
+
+@media (max-width: 768px) {
+    div[style*="height: 600px"] {
+        height: 500px !important;
+    }
+    
+    .content-box h2 {
+        font-size: 32px !important;
+    }
+    
+    .content-box p {
+        font-size: 16px !important;
+    }
+    
+    .content-box {
+        padding: 30px 20px !important;
+    }
+    
+    button[onclick*="changeSlide"] {
+        padding: 12px 16px !important;
+        font-size: 20px !important;
+    }
+    
+    button[onclick*="changeSlide"]:first-of-type {
+        left: 10px !important;
+    }
+    
+    button[onclick*="changeSlide"]:last-of-type {
+        right: 10px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    div[style*="height: 600px"] {
+        height: 400px !important;
+    }
+    
+    .content-box h2 {
+        font-size: 24px !important;
+        margin-bottom: 12px !important;
+    }
+    
+    .content-box p {
+        font-size: 14px !important;
+    }
+    
+    .content-box {
+        padding: 25px 15px !important;
+        border-radius: 15px !important;
+    }
+    
+    button[onclick*="changeSlide"] {
+        padding: 10px 14px !important;
+        font-size: 18px !important;
+    }
+    
+    div[style*="bottom: 30px"] {
+        bottom: 20px !important;
+    }
+    
+    .dot {
+        width: 10px !important;
+        height: 10px !important;
+    }
+    
+    .dot.active {
+        width: 12px !important;
+        height: 12px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Top bar stacks neatly */
+    div[style*="background-color: #f8f9fa;"] {
+        padding: 10px 12px !important;
+    }
+    div[style*="background-color: #28a745;"] {
+        justify-content: center !important;
+        gap: 8px !important;
+        font-size: 13px !important;
+    }
+    div[style*="background-color: #007bff;"] {
+        justify-content: center !important;
+        gap: 10px !important;
+        padding-top: 8px !important;
+    }
+
+    /* Collapse nav links by default on mobile; expanded via .active */
+    #navLinks {
+        display: none !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 0 !important;
+    }
+
+    #mainNavbar {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        padding: 15px !important;
+    }
+    
+    #mainNavbar > div:first-child {
+        text-align: center !important;
+        margin: 0 0 15px 0 !important;
+        width: 100% !important;
+    }
+    
+    #menuToggle {
+        display: block !important;
+        margin: 0 0 15px 0 !important;
+        width: 100% !important;
+    }
+    
+    #navLinks.active {
+        display: flex !important;
+    }
+    
+    #navLinks a {
+        padding: 15px !important;
+        text-align: center !important;
+        border-bottom: 1px solid #ddd !important;
+        font-size: 14px !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+    }
+    
+    #navLinks a:last-child {
+        border-bottom: none !important;
+    }
+    
+    #ctaBtn {
+        margin-top: 15px !important;
+        justify-content: center !important;
+        font-size: 13px !important;
+        padding: 12px 15px !important;
+        width: 100% !important;
+    }
+
+    /* Services section tweaks */
+    section[style*="text-align:center;"] h2 {
+        font-size: 22px !important;
+    }
+    section[style*="text-align:center;"] h3 {
+        font-size: 12px !important;
+    }
+    section[style*="text-align:center;"] > div[style*="max-width:1200px"] {
+        gap: 12px !important;
+    }
+    section[style*="text-align:center;"] a[style*="border-radius:10px"] {
+        flex: 1 1 140px !important;
+        max-width: 46% !important;
+        font-size: 12px !important;
+        padding: 12px 10px !important;
+    }
+    
+    footer > div:first-child {
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+    }
+    
+    footer > div:first-child > div:first-child > div:first-child {
+        width: 180px !important;
+        height: 70px !important;
+    }
+    
+    footer > div:first-child > div:last-child > div:first-child {
+        height: 260px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #mainNavbar > div:first-child img {
+        max-width: 110px !important;
+    }
+    
+    #ctaBtn {
+        font-size: 12px !important;
+        padding: 8px 12px !important;
+    }
+    
+    footer {
+        padding: 30px 10px 10px !important;
+    }
+    
+    footer h3 {
+        font-size: 15px !important;
+    }
+    
+    footer p, footer a, footer li {
+        font-size: 13px !important;
+    }
+    
+    footer > div:first-child > div:last-child > div:first-child {
+        height: 220px !important;
+    }
+    
+    footer > div:first-child > div:first-child > div:nth-child(2) > a {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 18px !important;
+    }
+
+    /* Services cards full width on very small screens */
+    section[style*="text-align:center;"] a[style*="border-radius:10px"] {
+        max-width: 100% !important;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(120px) scale(0.9);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(-10px) scale(1.02);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+        filter: blur(10px);
+    }
+    60% {
+        opacity: 0.8;
+        transform: translateY(-5px) scale(1.01);
+        filter: blur(2px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+</style>
+
+<script>
+let currentSlideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+let autoSlideInterval;
+
+function showSlide(index) {
+    if (index >= slides.length) {
+        currentSlideIndex = 0;
+    } else if (index < 0) {
+        currentSlideIndex = slides.length - 1;
+    } else {
+        currentSlideIndex = index;
+    }
+    
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === currentSlideIndex) {
+            slide.classList.add('active');
+        }
+    });
+    
+    dots.forEach((dot, i) => {
+        dot.classList.remove('active');
+        if (i === currentSlideIndex) {
+            dot.classList.add('active');
+        }
+    });
+}
+
+function changeSlide(direction) {
+    showSlide(currentSlideIndex + direction);
+    resetAutoSlide();
+}
+
+function currentSlide(index) {
+    showSlide(index - 1);
+    resetAutoSlide();
+}
+
+function autoSlide() {
+    autoSlideInterval = setInterval(() => {
+        currentSlideIndex++;
+        if (currentSlideIndex >= slides.length) {
+            currentSlideIndex = 0;
+        }
+        showSlide(currentSlideIndex);
+    }, 4000);
+}
+
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    autoSlide();
+}
+
+// Initialize slider
+document.addEventListener('DOMContentLoaded', function() {
+    showSlide(0);
+    autoSlide();
+});
+
+// Pause auto-slide on hover
+const sliderContainer = document.querySelector('div[style*="height: 600px"]');
+if (sliderContainer) {
+    sliderContainer.addEventListener('mouseenter', () => {
+        clearInterval(autoSlideInterval);
+    });
+    
+    sliderContainer.addEventListener('mouseleave', () => {
+        autoSlide();
+    });
+}
+
+// Touch swipe support for mobile
+let touchStartX = 0;
+let touchEndX = 0;
+
+if (sliderContainer) {
+    sliderContainer.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    sliderContainer.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+}
+
+function handleSwipe() {
+    if (touchEndX < touchStartX - 50) {
+        changeSlide(1);
+    }
+    if (touchEndX > touchStartX + 50) {
+        changeSlide(-1);
+    }
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+        changeSlide(-1);
+    } else if (e.key === 'ArrowRight') {
+        changeSlide(1);
+    }
+});
+</script>
+
+<!-- international logo  -->
+<!-- logo of international  -->
+ 
+ <!-- Sticky Icon Menu -->
+<div id="sticky-icon-menu" style="
+  position: fixed;
+  top: 200px; /* Navbar ke neeche adjust */
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 4px 8px 4px 0;
+">
+  <!-- Icon 1 -->
+  <div class="sticky-icon" data-text="Information" style="
+    background:linear-gradient(135deg,#219150 60%,#72c289 100%);
+    border-radius:50%; border:3px solid #fff;
+    box-shadow:0 3px 10px rgba(0,0,0,0.20);
+    width:50px;height:50px;display:flex;align-items:center;justify-content:center;
+    position: relative;
+    cursor: pointer;
+  ">
+    <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/114044f5-790b-48ae-bdc6-4b66d8cac62c.png" style="width:28px;height:28px;">
+  </div>
+  <!-- Icon 2 -->
+  <div class="sticky-icon" data-text="Enquiry for India" style="
+    background:linear-gradient(135deg,#005a31 60%,#263e23 100%);
+    border-radius:50%; border:3px solid #fff;
+    box-shadow:0 3px 10px rgba(0,0,0,0.20);
+    width:50px;height:50px;display:flex;align-items:center;justify-content:center;
+    position: relative;
+    cursor: pointer;
+  ">
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" style="width:28px;height:28px;">
+  </div>
+  <!-- Icon 3 -->
+  <div class="sticky-icon" data-text="Maintenance" style="
+    background:linear-gradient(135deg,#1482d0 60%,#162c47 100%);
+    border-radius:50%; border:3px solid #fff;
+    box-shadow:0 3px 10px rgba(0,0,0,0.20);
+    width:50px;height:50px;display:flex;align-items:center;justify-content:center;
+    position: relative;
+    cursor: pointer;
+  ">
+    <img src="https://img.icons8.com/ios/50/ffffff/settings.png" style="width:28px;height:28px;">
+  </div>
+</div>
+
+<style>
+/* Tooltip style */
+.sticky-icon .tooltip {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  background: #219150; /* Green background */
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  z-index: 10000;
+}
+
+/* Show tooltip */
+.sticky-icon.active .tooltip {
+  transform: translateY(-50%) scale(1);
+  opacity: 1;
+}
+
+/* Mobile responsiveness */
+@media (max-width:600px){
+  #sticky-icon-menu{top:100px;gap:10px;}
+  #sticky-icon-menu>div{width:36px!important;height:36px!important;}
+  #sticky-icon-menu img{width:18px!important;height:18px!important;}
+  .sticky-icon .tooltip{right:50px;padding:6px 10px;font-size:12px;}
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Add tooltip div dynamically
+  const icons = document.querySelectorAll('.sticky-icon');
+  icons.forEach(icon => {
+    const text = icon.getAttribute('data-text');
+    const tooltip = document.createElement('div');
+    tooltip.className = 'tooltip';
+    tooltip.innerText = text;
+    icon.appendChild(tooltip);
+  });
+
+  // Automatic tooltip animation
+  let currentIndex = 0;
+  function showTooltip() {
+    icons.forEach(i => i.classList.remove('active')); // hide all
+    icons[currentIndex].classList.add('active'); // show current
+    currentIndex = (currentIndex + 1) % icons.length;
+  }
+
+  // Change tooltip every 1 second
+  showTooltip(); // show first immediately
+  setInterval(showTooltip, 1000);
+});
+</script>
+
+
+<!-- end logo of international  -->
+ 
+
+
+ 
+ <!-- Chatbox Start -->
+   <div id="chatBox" style="position:fixed; bottom:20px; right:20px; z-index:9999; font-family:Arial, sans-serif;">
+
+  <!-- Chat Button -->
+  <div id="chatBtn" style="display:flex; align-items:center; background:linear-gradient(90deg, #2d9d4a, #1166aa); color:white; padding:10px 15px; border-radius:50px; cursor:pointer; box-shadow:0 4px 8px rgba(0,0,0,0.2); transition:0.3s;">
+    <img src="https://avatar.iran.liara.run/public/92" alt="Avatar" style="width:40px; height:40px; border-radius:50%; margin-right:10px; border:2px solid #1f7a5a;">
+    <span style="font-weight:bold;">Any question? We are online</span>
+  </div>
+
+  <!-- Popup Form -->
+  <div id="chatForm" style="display:none; position:absolute; bottom:60px; right:0; width:320px; background:linear-gradient(145deg, #2d9d4a, #1166aa); border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.2); padding:20px; transform:translateY(20px); opacity:0; transition:transform 0.3s, opacity 0.3s;">
+    <h3 style="margin-top:0; color:white; text-align:center;">Send Your Query</h3>
+    <form id="queryForm">
+      <input type="text" name="name" placeholder="Your Name" style="width:100%; padding:8px; margin-bottom:10px; border:1px solid #fff; border-radius:5px; background:white;" required>
+      <input type="email" name="email" placeholder="Your Email" style="width:100%; padding:8px; margin-bottom:10px; border:1px solid #fff; border-radius:5px; background:white;" required>
+      <textarea name="message" placeholder="Your Message" style="width:100%; padding:8px; margin-bottom:10px; border:1px solid #fff; border-radius:5px; background:white;" rows="4" required></textarea>
+      <button type="submit" style="background:white; color:#2d9d4a; padding:10px; border:none; border-radius:5px; cursor:pointer; width:100%;">Send</button>
+    </form>
+    <p id="successMsg" style="color:white; display:none; text-align:center; margin-top:10px;">Thank you! Your query is submitted.</p>
+  </div>
+
+</div>
+
+<script>
+  const chatBtn = document.getElementById('chatBtn');
+  const chatForm = document.getElementById('chatForm');
+  const queryForm = document.getElementById('queryForm');
+  const successMsg = document.getElementById('successMsg');
+
+  let isOpen = false; // track popup state
+
+  chatBtn.addEventListener('click', () => {
+    if(!isOpen){
+      chatForm.style.display = "block";
+      setTimeout(() => {
+        chatForm.style.transform = "translateY(0)";
+        chatForm.style.opacity = "1";
+      }, 10);
+      isOpen = true;
+    } else {
+      chatForm.style.transform = "translateY(20px)";
+      chatForm.style.opacity = "0";
+      setTimeout(() => {
+        chatForm.style.display = "none";
+      }, 300);
+      isOpen = false;
+    }
+  });
+
+  // Glow effect
+  setInterval(() => {
+    if(isOpen){
+      chatForm.style.boxShadow = "0 0 20px 5px #2d9d4a, 0 0 30px 10px #1166aa";
+      setTimeout(() => {
+        chatForm.style.boxShadow = "0 4px 12px rgba(0,0,0,0.2)";
+      }, 300);
+    }
+  }, 2000);
+
+  // Form submit
+  queryForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    successMsg.style.display = "block";
+    queryForm.reset();
+    setTimeout(() => {
+      successMsg.style.display = "none";
+      chatForm.style.transform = "translateY(20px)";
+      chatForm.style.opacity = "0";
+      setTimeout(() => {
+        chatForm.style.display = "none";
+      }, 300);
+      isOpen = false;
+    }, 2000);
+  });
+</script>
+
+
+</body>
+</html>

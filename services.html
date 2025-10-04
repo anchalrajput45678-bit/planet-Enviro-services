@@ -1,0 +1,916 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVZ3lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Planet Enviro Services - Premium Navbar</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Planet Enviro Services</title>
+   
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #28a745;
+            --primary-dark: #1e7e34;
+            --secondary: #0d6efd;
+            --dark: #2c3e50;
+            --light: #f8fffe;
+            --gray: #6c757d;
+            --white: #ffffff;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: var(--dark);
+        }
+
+        /* Top Info Bar */
+        .top-bar {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--secondary) 100%);
+            color: var(--white);
+            padding: 10px 20px;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .top-info {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            flex-wrap: wrap;
+        }
+
+        .top-info a {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 12px;
+        }
+
+        .top-info a:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background: var(--white);
+            border-radius: 6px;
+            transition: var(--transition);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icons a:hover {
+            transform: translateY(-3px) scale(1.1);
+        }
+
+        .social-icons a.facebook:hover {
+            box-shadow: 0 5px 15px rgba(24, 119, 242, 0.4);
+        }
+
+        .social-icons a.instagram:hover {
+            box-shadow: 0 5px 15px rgba(225, 48, 108, 0.4);
+            transform: translateY(-3px) scale(1.1) rotate(5deg);
+        }
+
+        .social-icons a.linkedin:hover {
+            box-shadow: 0 5px 15px rgba(0, 119, 181, 0.4);
+        }
+
+        .social-icons a.twitter:hover {
+            box-shadow: 0 5px 15px rgba(29, 161, 242, 0.4);
+        }
+
+        /* Main Navbar */
+        nav {
+            background: linear-gradient(to bottom, var(--white) 0%, var(--light) 100%);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid rgba(40, 167, 69, 0.15);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(40, 167, 69, 0.25);
+            transition: var(--transition);
+        }
+
+        .logo-icon:hover {
+            transform: rotate(5deg) scale(1.05);
+        }
+
+        .logo-icon-inner {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon-inner span {
+            font-size: 26px;
+            color: var(--white);
+            font-weight: bold;
+        }
+
+        .logo-text {
+            font-size: 20px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .logo-subtext {
+            font-size: 9px;
+            color: var(--gray);
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        /* Desktop Menu */
+        .desktop-menu {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: var(--transition);
+            position: relative;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .nav-link:hover .underline {
+            width: 100%;
+        }
+
+        .underline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.3s;
+            border-radius: 3px;
+        }
+
+        /* Dropdowns */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--white);
+            min-width: 200px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            padding: 10px 0;
+            z-index: 1000;
+            border-top: 3px solid var(--primary);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px 20px;
+            color: var(--dark);
+            text-decoration: none;
+            font-size: 13px;
+            transition: var(--transition);
+        }
+
+        .dropdown-content a:hover {
+            background: linear-gradient(90deg, rgba(40,167,69,0.1), rgba(13,110,253,0.1));
+            color: var(--primary);
+            padding-left: 25px;
+        }
+
+        /* Call Button */
+        .call-btn {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+            transition: var(--transition);
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .call-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 25px rgba(40, 167, 69, 0.6);
+        }
+
+        .call-btn:hover i {
+            animation: ring 0.5s ease-in-out infinite;
+        }
+
+        @keyframes ring {
+            0%, 100% { transform: rotate(0deg); }
+            10%, 30%, 50%, 70%, 90% { transform: rotate(-15deg); }
+            20%, 40%, 60%, 80% { transform: rotate(15deg); }
+        }
+
+        /* Mobile Menu Button */
+        .menu-btn {
+            display: none;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border: none;
+            width: 42px;
+            height: 42px;
+            border-radius: 8px;
+            cursor: pointer;
+            color: var(--white);
+            font-size: 20px;
+            box-shadow: 0 3px 10px rgba(40, 167, 69, 0.3);
+            transition: var(--transition);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 320px;
+            height: 100vh;
+            background: var(--white);
+            box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+            z-index: 1001;
+            transition: right 0.4s ease-in-out;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--secondary) 100%);
+            color: var(--white);
+        }
+
+        .mobile-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .mobile-logo-text {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 24px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .close-btn:hover {
+            transform: rotate(90deg);
+        }
+
+        .mobile-nav {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .mobile-nav-item {
+            margin-bottom: 10px;
+        }
+
+        .mobile-nav-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--dark);
+            padding: 12px 15px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: var(--transition);
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .mobile-nav-link:hover {
+            background: linear-gradient(90deg, rgba(40, 167, 69, 0.1), rgba(13, 110, 253, 0.1));
+            color: var(--primary);
+        }
+
+        .mobile-nav-link i {
+            transition: transform 0.3s;
+        }
+
+        .mobile-nav-link.active i {
+            transform: rotate(180deg);
+        }
+
+        .mobile-dropdown {
+            display: none;
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        .mobile-dropdown.active {
+            display: block;
+        }
+
+        .mobile-dropdown a {
+            display: block;
+            color: var(--gray);
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            transition: var(--transition);
+            border-radius: 6px;
+        }
+
+        .mobile-dropdown a:hover {
+            color: var(--primary);
+            background: rgba(40, 167, 69, 0.05);
+        }
+
+        .mobile-call-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 20px;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+            transition: var(--transition);
+            font-size: 16px;
+        }
+
+        .mobile-call-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(40, 167, 69, 0.5);
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .desktop-menu {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .desktop-menu {
+                display: none;
+            }
+            
+            .menu-btn {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                padding: 8px 15px;
+            }
+            
+            .social-icons {
+                display: none;
+            }
+            
+            .nav-container {
+                padding: 10px 15px;
+            }
+            
+            .logo-text {
+                font-size: 18px;
+            }
+            
+            .logo-subtext {
+                font-size: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 8px 12px;
+            }
+            
+            .logo-section {
+                gap: 8px;
+            }
+            
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .logo-text {
+                font-size: 16px;
+            }
+            
+            .mobile-menu {
+                width: 280px;
+            }
+        }
+
+        /* Demo Content */
+        .demo-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .demo-content h1 {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .demo-content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="top-info">
+            <!-- Email -->
+            <a href="mailto:info@planetenviro.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@planetenviro.com</span>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+919876543210">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 98765 43210</span>
+            </a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer" class="facebook">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#1877f2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" class="instagram">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="url(#instagram-gradient)"><defs><linearGradient id="instagram-gradient" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#f09433;stop-opacity:1" /><stop offset="25%" style="stop-color:#e6683c;stop-opacity:1" /><stop offset="50%" style="stop-color:#dc2743;stop-opacity:1" /><stop offset="75%" style="stop-color:#cc2366;stop-opacity:1" /><stop offset="100%" style="stop-color:#bc1888;stop-opacity:1" /></linearGradient></defs><path d="M12 2.163c3.204 0 3.584.012 4.85.07 ..."/></svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener noreferrer" class="linkedin">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#0077b5"><path d="M20.447 20.452h-3.554 ..."/></svg>
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" class="twitter">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#1DA1F2"><path d="M23.953 4.57a10 10 ..."/></svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav>
+        <div class="nav-container">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <div class="logo-icon-inner">
+                        <span>P</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="logo-text">Planet Enviro Services</div>
+                    <div class="logo-subtext">ENVIRONMENTAL SOLUTIONS</div>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="desktop-menu">
+                <!-- Home -->
+                <a href="./index.html" class="nav-link">
+                    Home
+                    <span class="underline"></span>
+                </a>
+
+                <!-- About Us with Dropdown -->
+                <div class="dropdown">
+                    <a href="./about.html" class="nav-link">
+                        About Us <i class="fa-solid fa-chevron-down"></i>
+                        <span class="underline"></span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="./aboutIntroduction.html">Introduction</a>
+                        <a href="./aboutDirector.html">Director's Profile</a>
+                        <a href="./aboutMission.html">Mission Vision</a>
+                        <a href="./aboutTestimonials.html">Testimonials</a>
+                        <a href="./aboutwhyus.html">Why Us</a>
+                        <a href="./aboutfaq.html">FAQ'S</a>
+                    </div>
+                </div>
+
+                <!-- Services with Dropdown -->
+                <div class="dropdown">
+                    <a href="#" class="nav-link">
+                        Services <i class="fa-solid fa-chevron-down"></i>
+                        <span class="underline"></span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Water Treatment</a>
+                        <a href="#">Waste Management</a>
+                        <a href="#">Air Pollution Control</a>
+                        <a href="#">Environmental Consulting</a>
+                        <a href="#">ETP Solutions</a>
+                        <a href="#">STP Solutions</a>
+                        <a href="#">MPCB Compliance</a>
+                        <a href="#">Sustainability Services</a>
+                    </div>
+                </div>
+
+                <!-- Projects with Dropdown -->
+                <div class="dropdown">
+                    <a href="#" class="nav-link">
+                        Projects <i class="fa-solid fa-chevron-down"></i>
+                        <span class="underline"></span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Completed Projects</a>
+                        <a href="#">Ongoing Projects</a>
+                        <a href="#">Industrial Projects</a>
+                        <a href="#">Commercial Projects</a>
+                        <a href="#">Government Projects</a>
+                        <a href="#">Case Studies</a>
+                        <a href="#">Project Gallery</a>
+                        <a href="#">Success Stories</a>
+                    </div>
+                </div>
+
+                <!-- Laboratory with Dropdown -->
+                <div class="dropdown">
+                    <a href="#" class="nav-link">
+                        Laboratory <i class="fa-solid fa-chevron-down"></i>
+                        <span class="underline"></span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Water Testing</a>
+                        <a href="#">Air Quality Testing</a>
+                        <a href="#">Soil Testing</a>
+                        <a href="#">Environmental Monitoring</a>
+                        <a href="#">Chemical Analysis</a>
+                        <a href="#">NABL Accreditation</a>
+                        <a href="#">Lab Equipment</a>
+                        <a href="#">Testing Procedures</a>
+                    </div>
+                </div>
+
+                <!-- Contact with Dropdown -->
+                <div class="dropdown">
+                    <a href="#" class="nav-link">
+                        Contact <i class="fa-solid fa-chevron-down"></i>
+                        <span class="underline"></span>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact Us</a>
+                        <a href="#">Get Quote</a>
+                        <a href="#">Office Locations</a>
+                        <a href="#">Enquiry Form</a>
+                        <a href="#">Support</a>
+                        <a href="#">Career</a>
+                        <a href="#">Feedback</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+
+                <!-- Call Button -->
+                <a href="tel:+919876543210" class="call-btn">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call Now</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-header">
+            <div class="mobile-logo">
+                <div class="logo-text">Planet Enviro</div>
+            </div>
+            <button class="close-btn" id="closeBtn">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-nav">
+            <!-- Home -->
+            <a href="./index.html" class="mobile-nav-link">
+                <span><i class="fa-solid fa-home"></i> Home</span>
+            </a>
+
+            <!-- About Us Mobile Dropdown -->
+            <div class="mobile-nav-item">
+                <div class="mobile-nav-link" data-target="mobileAboutDropdown">
+                    <span><i class="fa-solid fa-info-circle"></i> About Us</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="mobile-dropdown" id="mobileAboutDropdown">
+                    <a href="./aboutIntroduction.html">Introduction</a>
+                    <a href="./aboutDirector.html">Director's Profile</a>
+                    <a href="./aboutMission.html">Mission Vision</a>
+                    <a href="./aboutTestimonials.html">Testimonials</a>
+                    <a href="./aboutwhyus.html">Why Us</a>
+                    <a href="./aboutfaq.html">FAQ'S</a>
+                </div>
+            </div>
+
+            <!-- Services Mobile Dropdown -->
+            <div class="mobile-nav-item">
+                <div class="mobile-nav-link" data-target="mobileServicesDropdown">
+                    <span><i class="fa-solid fa-cogs"></i> Services</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="mobile-dropdown" id="mobileServicesDropdown">
+                    <a href="#">Water Treatment</a>
+                    <a href="#">Waste Management</a>
+                    <a href="#">Air Pollution Control</a>
+                    <a href="#">Environmental Consulting</a>
+                    <a href="#">ETP Solutions</a>
+                    <a href="#">STP Solutions</a>
+                    <a href="#">MPCB Compliance</a>
+                    <a href="#">Sustainability Services</a>
+                </div>
+            </div>
+
+            <!-- Projects Mobile Dropdown -->
+            <div class="mobile-nav-item">
+                <div class="mobile-nav-link" data-target="mobileProjectsDropdown">
+                    <span><i class="fa-solid fa-project-diagram"></i> Projects</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="mobile-dropdown" id="mobileProjectsDropdown">
+                    <a href="#">Completed Projects</a>
+                    <a href="#">Ongoing Projects</a>
+                    <a href="#">Industrial Projects</a>
+                    <a href="#">Commercial Projects</a>
+                    <a href="#">Government Projects</a>
+                    <a href="#">Case Studies</a>
+                    <a href="#">Project Gallery</a>
+                    <a href="#">Success Stories</a>
+                </div>
+            </div>
+
+            <!-- Laboratory Mobile Dropdown -->
+            <div class="mobile-nav-item">
+                <div class="mobile-nav-link" data-target="mobileLabDropdown">
+                    <span><i class="fa-solid fa-flask"></i> Laboratory</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="mobile-dropdown" id="mobileLabDropdown">
+                    <a href="#">Water Testing</a>
+                    <a href="#">Air Quality Testing</a>
+                    <a href="#">Soil Testing</a>
+                    <a href="#">Environmental Monitoring</a>
+                    <a href="#">Chemical Analysis</a>
+                    <a href="#">NABL Accreditation</a>
+                    <a href="#">Lab Equipment</a>
+                    <a href="#">Testing Procedures</a>
+                </div>
+            </div>
+
+            <!-- Contact Mobile Dropdown -->
+            <div class="mobile-nav-item">
+                <div class="mobile-nav-link" data-target="mobileContactDropdown">
+                    <span><i class="fa-solid fa-envelope"></i> Contact</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="mobile-dropdown" id="mobileContactDropdown">
+                    <a href="#">Contact Us</a>
+                    <a href="#">Get Quote</a>
+                    <a href="#">Office Locations</a>
+                    <a href="#">Enquiry Form</a>
+                    <a href="#">Support</a>
+                    <a href="#">Career</a>
+                    <a href="#">Feedback</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Call Button -->
+        <a href="tel:+919876543210" class="mobile-call-btn">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call Now</span>
+        </a>
+    </div>
+
+  
+
+    <script>
+        // Mobile Menu Functionality
+        const menuBtn = document.getElementById('menuBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('overlay');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link[data-target]');
+
+        // Toggle mobile menu
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        }
+
+        // Toggle mobile dropdown
+        function toggleMobileDropdown(targetId) {
+            const dropdown = document.getElementById(targetId);
+            const link = document.querySelector(`.mobile-nav-link[data-target="${targetId}"]`);
+            
+            // Close all other dropdowns
+            document.querySelectorAll('.mobile-dropdown').forEach(drop => {
+                if (drop.id !== targetId) {
+                    drop.classList.remove('active');
+                    const otherLink = document.querySelector(`.mobile-nav-link[data-target="${drop.id}"]`);
+                    if (otherLink) {
+                        otherLink.classList.remove('active');
+                    }
+                }
+            });
+            
+            // Toggle current dropdown
+            dropdown.classList.toggle('active');
+            link.classList.toggle('active');
+        }
+
+        // Event Listeners
+        menuBtn.addEventListener('click', toggleMobileMenu);
+        closeBtn.addEventListener('click', toggleMobileMenu);
+        overlay.addEventListener('click', toggleMobileMenu);
+
+        // Mobile dropdown toggles
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                toggleMobileDropdown(targetId);
+            });
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-dropdown a').forEach(link => {
+            link.addEventListener('click', toggleMobileMenu);
+        });
+
+        // Close dropdowns when clicking outside on desktop
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 1024) {
+                mobileMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+                
+                // Close all mobile dropdowns
+                document.querySelectorAll('.mobile-dropdown').forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+                document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+            }
+        });
+    </script>
+
+
+
+
+
+

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Treatment Plants</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #ffffff;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e40af 0%, #059669 50%, #0891b2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '💧';
+            position: absolute;
+            font-size: 300px;
+            opacity: 0.1;
+            top: -50px;
+            right: -50px;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .hero h1 {
+            font-size: 3.5em;
+            font-weight: 800;
+            margin-bottom: 15px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero p {
+            font-size: 1.3em;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            background: #ffffff;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            color: #047857;
+            margin-bottom: 50px;
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #059669, #0891b2);
+            border-radius: 2px;
+        }
+        
+        /* Plant Card - Zigzag Layout */
+        .plant-section {
+            margin-bottom: 80px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            background: white;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+        }
+        
+        .plant-section:hover {
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            transform: translateY(-5px);
+        }
+        
+        .plant-section:nth-child(even) {
+            flex-direction: row-reverse;
+            background: #f8fafc;
+        }
+        
+        .plant-image-container {
+            flex: 1;
+            position: relative;
+        }
+        
+        .plant-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.4s ease;
+        }
+        
+        .plant-section:hover .plant-image {
+            transform: scale(1.05);
+        }
+        
+        .plant-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #059669, #0891b2);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.9em;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+        
+        .plant-content {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .plant-title {
+            font-size: 2.2em;
+            color: #047857;
+            margin-bottom: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .plant-icon {
+            font-size: 1.2em;
+        }
+        
+        .plant-description {
+            font-size: 1.1em;
+            color: #475569;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        
+        .features-list {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+        
+        .features-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 1em;
+            color: #334155;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .features-list li:hover {
+            padding-left: 10px;
+            color: #047857;
+        }
+        
+        .features-list li::before {
+            content: '✓';
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, #10b981, #0ea5e9);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #059669, #0891b2);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            box-shadow: 0 8px 25px rgba(5,150,105,0.4);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(5,150,105,0.5);
+        }
+        
+        .features-list {
+            list-style: none;
+            margin-bottom: 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        
+        .features-list.expanded {
+            max-height: 500px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .plant-section {
+                gap: 35px;
+                padding: 30px;
+            }
+            
+            .plant-image {
+                height: 350px;
+            }
+            
+            .plant-title {
+                font-size: 1.9em;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            
+            .hero p {
+                font-size: 1.1em;
+            }
+            
+            .container {
+                padding: 40px 15px;
+            }
+            
+            .section-title {
+                font-size: 2em;
+            }
+            
+            .plant-section,
+            .plant-section:nth-child(even) {
+                flex-direction: column;
+                padding: 25px;
+                gap: 25px;
+            }
+            
+            .plant-image {
+                height: 280px;
+            }
+            
+            .plant-title {
+                font-size: 1.6em;
+            }
+            
+            .plant-description {
+                font-size: 1em;
+            }
+            
+            .features-list li {
+                font-size: 0.95em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 50px 15px;
+            }
+            
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .hero p {
+                font-size: 1em;
+            }
+            
+            .section-title {
+                font-size: 1.6em;
+            }
+            
+            .plant-section {
+                padding: 20px;
+            }
+            
+            .plant-image {
+                height: 220px;
+            }
+            
+            .plant-badge {
+                font-size: 0.8em;
+                padding: 10px 18px;
+            }
+            
+            .plant-title {
+                font-size: 1.4em;
+            }
+            
+            .cta-button {
+                font-size: 1em;
+                padding: 12px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1> Water Treatment Plants</h1>
+        <p>Advanced purification solutions for clean, safe, and sustainable water management</p>
+    </div>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <h2 class="section-title">Our Water Treatment Solutions</h2>
+        
+        <!-- RO Plants -->
+        <div class="plant-section">
+            <div class="plant-image-container">
+                <img src="https://safeaquatech.com/assets/frontend/img/ro-water-plant/1.webp" alt="RO Plant" class="plant-image">
+                <div class="plant-badge">PREMIUM</div>
+            </div>
+            <div class="plant-content">
+                <h3 class="plant-title">
+                    <span class="plant-icon">🔬</span>
+                    RO Plants (Reverse Osmosis)
+                </h3>
+                <p class="plant-description">
+                    Our Reverse Osmosis systems utilize semi-permeable membrane technology to remove dissolved salts, minerals, and contaminants from water. Operating at high pressure, RO plants eliminate up to 99% of impurities including heavy metals, bacteria, and viruses, delivering pure, safe drinking water for residential, commercial, and industrial applications.
+                </p>
+                <ul class="features-list" id="features1">
+                    <li>Removes 99% TDS (Total Dissolved Solids)</li>
+                    <li>Multi-stage filtration process</li>
+                    <li>Automatic flush system for membrane protection</li>
+                    <li>Energy-efficient operation with low maintenance</li>
+                    <li>Capacity range: 100 LPH to 100,000 LPH</li>
+                </ul>
+                <button class="cta-button" onclick="toggleFeatures('features1', this)">Read More →</button>
+            </div>
+        </div>
+        
+        <!-- DM Plants -->
+        <div class="plant-section">
+            <div class="plant-image-container">
+                <img src="https://wteinfra.com/uploads/product/Demineralization%20DM%20Plant.webp" alt="DM Plant" class="plant-image">
+                <div class="plant-badge">INDUSTRIAL</div>
+            </div>
+            <div class="plant-content">
+                <h3 class="plant-title">
+                    <span class="plant-icon">⚗️</span>
+                    Demineralization (DM) Plants
+                </h3>
+                <p class="plant-description">
+                    Demineralization plants employ ion exchange technology to produce ultra-pure water by removing all dissolved minerals and salts. Through cation and anion exchange resins, DM plants deliver water with conductivity as low as 0.5 µS/cm, essential for boiler feed water, pharmaceutical manufacturing, electronics production, and laboratory applications.
+                 
+                </p>
+                <ul class="features-list" id="features2">
+                    <li>Two-bed or mixed-bed configuration</li>
+                    <li>Produces ultra-pure demineralized water</li>
+                    <li>Prevents scaling in boilers and machinery</li>
+                    <li>Automatic regeneration with acid & caustic</li>
+                    <li>Ideal for pharmaceutical & power industries</li>
+                </ul>
+                <button class="cta-button" onclick="toggleFeatures('features2', this)">Read More →</button>
+            </div>
+        </div>
+        
+        <!-- Water Softeners -->
+        <div class="plant-section">
+            <div class="plant-image-container">
+                <img src=" https://www.unistaraquatech.com/wp-content/uploads/2024/10/c7ebaf2d5011895fb09ec8bbb41197c9.jpg" alt="Water Softener" class="plant-image">
+                <div class="plant-badge">ESSENTIAL</div>
+            </div>
+            <div class="plant-content">
+                <h3 class="plant-title">
+                    <span class="plant-icon">💎</span>
+                    Softening Plants / Water Softeners
+                </h3>
+                <p class="plant-description">
+                    Water softening systems eliminate hardness-causing calcium and magnesium ions through ion exchange with sodium ions. Our softeners prevent scale buildup in pipelines, heating elements, and appliances, extending equipment lifespan, reducing soap consumption, and improving water quality for household and industrial use while maintaining essential mineral balance.
+                </p>
+                <ul class="features-list" id="features3">
+                    <li>Removes calcium & magnesium hardness</li>
+                    <li>Prevents scale formation in pipes & appliances</li>
+                    <li>Salt-based regeneration system</li>
+                    <li>Improves soap efficiency by 50-70%</li>
+                    <li>Automatic & manual operation options</li>
+                </ul>
+                <button class="cta-button" onclick="toggleFeatures('features3', this)">Read More →</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleFeatures(id, button) {
+            var features = document.getElementById(id);
+            if (features.classList.contains('expanded')) {
+                features.classList.remove('expanded');
+                button.textContent = 'Read More →';
+            } else {
+                features.classList.add('expanded');
+                button.textContent = 'Read Less ↑';
+            }
+        }
+    </script>
+</body>
+</html>

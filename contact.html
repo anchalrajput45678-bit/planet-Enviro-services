@@ -1,0 +1,200 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Environment Consultancy Form</title>
+<style>
+  body {
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e6f2e6, #f0fff0);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+    box-sizing:border-box;
+  }
+
+  .env-form {
+    background:#ffffff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    max-width:500px;
+    width:100%;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .circle1, .circle2 {
+    position:absolute;
+    border-radius:50%;
+    z-index:0;
+  }
+  .circle1 {
+    width:150px;
+    height:150px;
+    background: rgba(17,102,57,0.1); /* green-blue gradient not applied to decorative circles */
+    top:-50px;
+    right:-50px;
+    animation:float 6s ease-in-out infinite alternate;
+  }
+  .circle2 {
+    width:100px;
+    height:100px;
+    background: rgba(0,102,170,0.1); /* subtle blue tone for variation */
+    bottom:-30px;
+    left:-30px;
+    animation:float2 5s ease-in-out infinite alternate;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0) rotate(0deg);}
+    100% { transform: translateY(20px) rotate(45deg);}
+  }
+  @keyframes float2 {
+    0% { transform: translateY(0) rotate(0deg);}
+    100% { transform: translateY(-15px) rotate(-30deg);}
+  }
+
+  /* Contact Buttons */
+  .contact-buttons {
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:20px;
+    z-index:1;
+    position:relative;
+  }
+  .contact-buttons a {
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:12px;
+    font-weight:600;
+    color:#fff;
+    transition:all 0.3s ease;
+  }
+  .contact-buttons a.call {
+    background: linear-gradient(90deg, #116639, #1166aa); /* green-blue gradient */
+  }
+  .contact-buttons a.call:hover {
+    background: linear-gradient(90deg, #3cb371, #3399cc); /* lighter green-blue on hover */
+  }
+  .contact-buttons a.email {
+    background: linear-gradient(90deg, #FFA500, #1166aa); /* orange-blue gradient for contrast */
+  }
+  .contact-buttons a.email:hover {
+    background: linear-gradient(90deg, #ffb733, #3399cc);
+  }
+
+  /* Form Heading */
+  .env-form h2 {
+    text-align:center;
+    color:#116639; /* Can also be gradient if you want */
+    margin-bottom:30px;
+    font-weight:800;
+    z-index:1;
+    position:relative;
+  }
+
+  /* Inputs, Textarea, Select */
+  .env-form input,
+  .env-form textarea,
+  .env-form select {
+    width:100%;
+    padding:15px 20px;
+    border-radius:12px;
+    border:2px solid #e6f2e6;
+    outline:none;
+    font-size:15px;
+    margin-bottom:25px;
+    transition: all 0.3s ease;
+    background:#f9fff9;
+    position:relative;
+    z-index:1;
+  }
+  .env-form textarea { min-height:100px; resize:none; }
+
+  /* Focus effect */
+  .env-form input:focus,
+  .env-form textarea:focus,
+  .env-form select:focus {
+    border-color: #116639;
+    box-shadow:0 4px 15px rgba(17,102,57,0.2);
+  }
+
+  /* Submit Button */
+  .env-form button {
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background: linear-gradient(90deg,#116639,#1166aa); /* green-blue gradient */
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition: all 0.3s ease;
+    position:relative;
+    z-index:1;
+  }
+  .env-form button:hover {
+    transform: translateY(-3px);
+    box-shadow:0 8px 20px rgba(17,102,57,0.3);
+  }
+
+  @media (max-width:550px){
+    .env-form {
+      padding:30px 20px;
+    }
+    .contact-buttons {
+      flex-direction:column;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <form class="env-form">
+    <!-- Floating decorative circles -->
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <!-- Active Contact Buttons -->
+    <div class="contact-buttons">
+      <a href="tel:+911234567890" class="call">📞 Call Us</a>
+      <a href="mailto:info@envconsultancy.com" class="email">✉️ Email Us</a>
+    </div>
+
+    <h2>🌿 Get Environmental Consultation</h2>
+
+    <!-- Name -->
+    <input type="text" placeholder="Your Name" required>
+
+    <!-- Email -->
+    <input type="email" placeholder="Email Address" required>
+
+    <!-- Phone -->
+    <input type="tel" placeholder="Phone Number" required>
+
+    <!-- Service Dropdown -->
+    <select required>
+      <option value="" disabled selected>Select Service</option>
+      <option>Environmental Audit</option>
+      <option>Waste Management</option>
+      <option>Green Solutions</option>
+      <option>Compliance Support</option>
+    </select>
+
+    <!-- Message -->
+    <textarea placeholder="Your Message" required></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit Request</button>
+
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+Clients Section
+  <section style="text-align:center; padding:50px 20px; background:#f1f1f1; overflow:hidden; position:relative;">
+  <h3 style="font-size:14px; color:#888; letter-spacing:2px; margin-bottom:10px;">
+    OUR VALUED CLIENTS
+  </h3>
+  <h2 style="font-size:28px; font-weight:bold; margin-bottom:35px; color:#222;">
+    Trusted by Leading Companies
+  </h2>
+
+  <!-- Slider Container -->
+  <div id="client-slider" style="
+       display:flex;
+       gap:20px;
+       width:100%;
+       overflow:hidden;
+       scroll-behavior:smooth;
+       max-width:1200px;
+       margin:0 auto;
+       position:relative;
+  ">
+    <!-- Client Logos (add as many as you want) -->
+    <a href="https://www.majestiqueles.com" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCIUf1uP9X9FdwrvG2d9C48OJ0xSvWDhQwhA&s" style="width:80%; height:auto;">
+    </a>
+    <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src="https://www.cphi-online.com/company/emcure-pharmaceuticals-limited/c267531img_XL.jpg" style="width:80%; height:auto;">
+    </a>
+    <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src="https://download.logo.wine/logo/Tech_Mahindra/Tech_Mahindra-Logo.wine.png" style="width:80%; height:auto;">
+    </a>
+    <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src="https://pharmaboardroom.com/wp-content/uploads/2018/12/hikal_150x150.jpg" style="width:80%; height:auto;">
+    </a>
+    <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src="https://e7.pngegg.com/pngimages/335/776/png-clipart-emerson-electric-business-logo-emerson-philippines-vertiv-co-business-blue-angle.png" style="width:80%; height:auto;">
+    </a>
+    <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src="https://www.tkelevator.com/media/baet/tke_logo_gradient_reveal_image_w450_h338.webp" style="width:80%; height:auto;">
+    </a>
+    <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src="https://www.ambergroupindia.com/wp-content/uploads/2025/02/Amber-Logo-on-white.png" style="width:80%; height:auto;">
+    </a>
+    <!-- 9 -->
+    <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Godrej_Logo.svg/398px-Godrej_Logo.svg.png" style="width:80%; height:auto;">
+    </a>
+<!-- 10. -->
+     <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src="https://delhi.iceboxchallenge.org/wp-content/uploads/2024/02/bg-shirke-logo-11.jpg " style="width:80%; height:auto;">
+    </a>
+
+    <!-- 11 -->
+     <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU-0b7NzoV-y1n6SWJUmfEgDXGzRnFJswZrQ&s " style="width:80%; height:auto;">
+    </a>
+
+    <!-- 12. -->
+     <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src="https://www.kumarworld.com/wp-content/uploads/2017/03/Kumar_Properties_New_Logo_02.png " style="width:80%; height:auto;">
+    </a>
+
+    <!-- 13. -->
+<a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTv3cPXnMeXYFgApdWLp-o5i0fhJg9KAmPHg&s " style="width:80%; height:auto;">
+    </a>
+
+    <!-- 14 -->
+     <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src="https://media.licdn.com/dms/image/v2/C4D0BAQEWRqlRwG88yw/company-logo_200_200/company-logo_200_200/0/1660713017930/pharandespaces_logo?e=2147483647&v=beta&t=V4nV2XD8qQqs1klRpX7bsEqN8j-3XdW5uqOVpKQbxHo " style="width:80%; height:auto;">
+    </a>
+
+    <!-- /15 -->
+     <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src="https://cdn.specpick.com/images/pcb//shogini_technoarts_pvt_ltd_638251850983476557_300.PNG" style="width:80%; height:auto;">
+    </a>
+
+    <!-- 16 -->
+     <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src=" " style="width:80%; height:auto;">
+    </a>
+
+    <!-- 17 -->
+     <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src=" " style="width:80%; height:auto;">
+    </a>
+
+    <!-- 18 -->
+     <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src=" " style="width:80%; height:auto;">
+    </a>
+
+    <!-- 19 -->
+     <a href="#" target="_blank" style="flex:0 0 150px; padding:15px; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:flex; justify-content:center; align-items:center;">
+      <img src=" " style="width:80%; height:auto;">
+    </a>
+
+    <!-- 20 -->
+    <!-- Duplicate logos for infinite scroll effect -->
+    
+
+</section>
+
+<script>
+// Continuous Auto Scroll
+const slider = document.getElementById('client-slider');
+let scrollSpeed = 1; // pixels per frame
+
+function continuousScroll() {
+  slider.scrollLeft += scrollSpeed;
+
+  // Loop back for infinite scroll
+  if (slider.scrollLeft >= slider.scrollWidth / 2) { 
+    slider.scrollLeft = 0;
+  }
+
+  requestAnimationFrame(continuousScroll);
+}
+continuousScroll();
+
+// Hover animation for logos
+const clientBoxes = slider.querySelectorAll('a');
+clientBoxes.forEach(box => {
+  box.addEventListener('mouseover', () => {
+    box.style.transform = 'scale(1.1)';
+    box.style.boxShadow = '0 12px 25px rgba(0,0,0,0.18)';
+  });
+  box.addEventListener('mouseout', () => {
+    box.style.transform = 'scale(1)';
+    box.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
+  });
+});
+</script>
+
+
+
+
+
+
+<div style="display: none; position: absolute; top: 100%; left: 0; 
+              background: white; min-width: 180px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); 
+              border-radius: 6px; overflow: hidden; z-index: 1000;" id="aboutDropdown">
+    <a href="./aboutIntroduction.html" style="color: #2c3e50; padding: 10px 15px; display: block; text-decoration: none; font-size: 14px; font-weight: 500;"
+       onmouseover="this.style.background='#f4f4f4'" onmouseout="this.style.background='white'"> Introduction</a>
+    <a href="./aboutDirector.html" style="color: #2c3e50; padding: 10px 15px; display: block; text-decoration: none; font-size: 14px; font-weight: 500;"
+       onmouseover="this.style.background='#f4f4f4'" onmouseout="this.style.background='white'"> Director's Profile</a>
+    <a href="./aboutMission.html" style="color: #2c3e50; padding: 10px 15px; display: block; text-decoration: none; font-size: 14px; font-weight: 500;"
+       onmouseover="this.style.background='#f4f4f4'" onmouseout="this.style.background='white'"> Mission ,Vision</a>
+    <a href="./aboutTestimonials.html" style="color: #2c3e50; padding: 10px 15px; display: block; text-decoration: none; font-size: 14px; font-weight: 500;"
+       onmouseover="this.style.background='#f4f4f4'" onmouseout="this.style.background='white'">Testimonials </a>
+    <a href="./aboutwhyus.html" style="color: #2c3e50; padding: 10px 15px; display: block; text-decoration: none; font-size: 14px; font-weight: 500;"
+       onmouseover="this.style.background='#f4f4f4'" onmouseout="this.style.background='white'"> Why Us</a>
+    <a href="./aboutfaq.html" style="color: #2c3e50; padding: 10px 15px; display: block; text-decoration: none; font-size: 14px; font-weight: 500;"
+       onmouseover="this.style.background='#f4f4f4'" onmouseout="this.style.background='white'"> FAQ's</a>
+    <!-- <a href="#" style="color: #2c3e50; padding: 10px 15px; display: block; text-decoration: none; font-size: 14px; font-weight: 500;"
+       onmouseover="this.style.background='#f4f4f4'" onmouseout="this.style.background='white'">Dropdown 7</a> -->
+  </div>
+</div>
+
+<script>
+  // Dropdown show/hide on hover
+  const aboutDiv = document.querySelector("div[style*='display: inline-block']");
+  const aboutDropdown = document.getElementById("aboutDropdown");
+
+  aboutDiv.addEventListener("mouseover", () => {
+    aboutDropdown.style.display = "block";
+  });
+
+  aboutDiv.addEventListener("mouseout", () => {
+    aboutDropdown.style.display = "none";
+  });
+</script>
